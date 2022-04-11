@@ -1,4 +1,4 @@
-/* 2. Certain fields from Categories
+/* Exercise 2 - Certain fields from Categories
 
 In the Categories table, selecting all the fields using this SQL:
 SELECT * FROM Categories
@@ -7,4 +7,3 @@ SELECT * FROM Categories
 SELECT CategoryName,
 	Description
 FROM dbo.Categories;
-
