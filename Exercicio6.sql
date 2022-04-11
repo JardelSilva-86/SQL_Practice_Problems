@@ -1,4 +1,6 @@
-/* Exercicio 6. Suppliers and ContactTitles IN the Suppliers table, show the SupplierID, ContactName, and ContactTitle for those Suppliers whose ContactTitle is not Marketing Manager. */
+/* Exercise 6 - Suppliers and ContactTitles 
+
+In the Suppliers table, show the SupplierID, ContactName, and ContactTitle for those Suppliers whose ContactTitle is not Marketing Manager. */
 
 SELECT SupplierID,
   ContactName,
