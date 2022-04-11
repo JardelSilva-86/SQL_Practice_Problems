@@ -16,3 +16,25 @@ SELECT CategoryName,
 	Description
 FROM dbo.Categories;
 
+
+/* 3. Sales Representatives
+
+We'd like to see just the FirstName, LastName, and HireDate of all the employees with the Title of Sales Representative.
+Write a SQL statement that returns only those employees.*/
+
+SELECT FirstName, 
+	LastName, 
+	HireDate
+FROM Employees
+WHERE Title = 'Sales Representative';
+
+/* 4. Sales Representatives in the  United States
+
+Now we'd like to see the same columns as above, but only for those employees that both have the title of Sales Representative, 
+and also are in the United Sates*/
+
+SELECT FirstName,
+	LastName,
+	HireDate
+FROM Employees
+WHERE Title = 'Sales Representative' AND Country = 'USA';
