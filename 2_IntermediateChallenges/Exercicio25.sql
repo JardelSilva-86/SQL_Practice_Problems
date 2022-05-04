@@ -8,3 +8,14 @@ SELECT TOP (3) ShipCountry,
 FROM Orders
 GROUP BY ShipCountry
 ORDER BY AVGFreight DESC;
+
+/*
+Another way is by using Offset, as below.
+*/
+SELECT
+	ShipCountry,
+	AVG(Freight) as 'AVGFreight'
+FROM Orders
+GROUP BY ShipCountry
+ORDER BY AVGFreight DESC
+OFFSET 0 ROWS FETCH FIRST 3 ROWS ONLY;
