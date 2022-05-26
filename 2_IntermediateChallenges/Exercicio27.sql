@@ -7,6 +7,8 @@ SELECT TOP (3) ShipCountry,
   AVG(Freight) AS 'AVGFreight'
 FROM Orders
 WHERE OrderDate BETWEEN '19970101' AND '19971231'
+// pode ser utilizado a a forma abaixo
+// WHERE OrdrDate BETWEEN ('19970101', '19971231')
 GROUP BY ShipCountry
 ORDER BY AVGFreight DESC;
 
